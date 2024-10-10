@@ -11,7 +11,7 @@ import { faBolt, faBookOpen, faShieldAlt } from '@fortawesome/free-solid-svg-ico
 import '../styles/HeroSection.css'
 const HeroSection = () => {
   return (
-    <div className=" text-white">
+    <div className=" text-white w-full">
 
       <div className="relative h-[900px] flex w-full mx-auto px-4 sm:px-6 lg:px-8 py-24 ">
         {/* Background City and Currency */}
