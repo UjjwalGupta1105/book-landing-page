@@ -1,0 +1,101 @@
+
+    .animate-fadeIn {
+      animation: fadeIn 2s ease-in-out forwards;
+      animation-iteration-count: infinite;
+ 
+     
+   
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-bounce {
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+/* 
+    .btn-shine {
+        
+      
+        
+        color: #ffffff;
+        background: linear-gradient(to right, #9d9d9d 0, #ffffff , #ffffff 20%);
+        background-position: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 3s infinite;
+      
+        -webkit-text-size-adjust: none;
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+       
+      }
+      @-moz-keyframes shine {
+        0% {
+          background-position: 0;
+        }
+        60% {
+          background-position: 180px;
+        }
+        100% {
+          background-position: 180px;
+        }
+      }
+      @-webkit-keyframes shine {
+        0% {
+          background-position: 0;
+        }
+        60% {
+          background-position: 180px;
+        }
+        100% {
+          background-position: 180px;
+        }
+      }
+      @-o-keyframes shine {
+        0% {
+          background-position: 0;
+        }
+        60% {
+          background-position: 180px;
+        }
+        100% {
+          background-position: 180px;
+        }
+      }
+      @keyframes shine {
+        0% {
+          background-position: 0;
+        }
+        60% {
+          background-position: 180px;
+        }
+        100% {
+          background-position: 180px;
+        }
+      }
+       */
+
+      .book{
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+      }
