@@ -11,6 +11,7 @@ import FAQSection from './components/FaqSection';
 import FooterSection from './components/FooterSection';
 import ReviewsSection from './components/ReviewSection';
 import FeedbackFormSection from './components/FeedbackFormSection';
+import QuizSection from './components/QuizSection';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
     <ReviewsSection/>
     <FeedbackFormSection/>
       <FAQSection/>
+      <QuizSection/>
       <PreOrderCTA />
     
       <FooterSection/>
