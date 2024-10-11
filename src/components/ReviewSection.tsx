@@ -1,5 +1,5 @@
 // ReviewsSection.js
-import React from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faQuoteLeft, faStarHalf } from '@fortawesome/free-solid-svg-icons';
 import reviewImage1 from '../assets/c3.jpg'; 

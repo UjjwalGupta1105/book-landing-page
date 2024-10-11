@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faHome, faUsers, faQuestionCircle, faBars } from '@fortawesome/free-solid-svg-icons';
 import '../styles/NavBar.css'

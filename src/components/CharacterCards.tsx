@@ -1,8 +1,8 @@
 // CharacterCards.js
-import React from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShieldAlt, faSkullCrossbones, faFire, faBolt } from '@fortawesome/free-solid-svg-icons';
-import c1 from '../assets/c1.jpg'
+
 import c2 from '../assets/c2.jpg'
 import c3 from '../assets/c3.jpg'
 import c4 from '../assets/c4.jpg'

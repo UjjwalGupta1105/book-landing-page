@@ -1,13 +1,11 @@
 
 
 
-
-import React from 'react';
 import bookCover from '../assets/WhatsApp.jpg'; 
 import cityImage from '../assets/city.jpg';
-import NavBar from './NavBar';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBolt, faBookOpen, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
+import {  faBookOpen, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
 import '../styles/HeroSection.css'
 const HeroSection = () => {
   return (

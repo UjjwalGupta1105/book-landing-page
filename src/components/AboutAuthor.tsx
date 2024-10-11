@@ -1,11 +1,9 @@
 // AuthorSection.js
-import React from 'react';
+
 import authorImage from '../assets/author.jpg'; // Replace with your image path
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import heroBackground from '../assets/author.jpg'; // Optional: Background image
 
-import superheroImage from '../assets/author.jpg'
 import {motion} from 'framer-motion'
 const AuthorSection = () => {
   return (

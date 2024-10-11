@@ -1,9 +1,9 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import feedbackImage from '../assets/c1.jpg'; 
+
 import '../styles/FaqSection.css'
 const FeedbackFormSection = () => {
   const [rating, setRating] = useState(0);

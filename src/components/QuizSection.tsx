@@ -1,8 +1,8 @@
 
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuestionCircle, faCheckCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { faQuestionCircle, faCheckCircle,  } from '@fortawesome/free-solid-svg-icons';
 import quizImage from '../assets/city.jpg';
 
 const questions = [
