@@ -1,11 +1,16 @@
-
-import  { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuestionCircle, faCheckCircle,  } from '@fortawesome/free-solid-svg-icons';
+import { faQuestionCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import quizImage from '../assets/city.jpg';
 
-const questions = [
+interface Question {
+  question: string;
+  options: string[];
+  correctAnswer: string;
+}
+
+const questions: Question[] = [
   {
     question: "Who is the main hero in the book?",
     options: ["Hero X", "Hero Y", "Hero Z", "Hero A"],
@@ -23,13 +28,13 @@ const questions = [
   },
 ];
 
-const QuizSection = () => {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [score, setScore] = useState(0);
-  const [showResult, setShowResult] = useState(false);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
+const QuizSection: React.FC = () => {
+  const [currentQuestion, setCurrentQuestion] = useState<number>(0);
+  const [score, setScore] = useState<number>(0);
+  const [showResult, setShowResult] = useState<boolean>(false);
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
 
-  const handleAnswerClick = (answer) => {
+  const handleAnswerClick = (answer: string) => {
     setSelectedAnswer(answer);
     if (answer === questions[currentQuestion].correctAnswer) {
       setScore(score + 1);
@@ -47,7 +52,6 @@ const QuizSection = () => {
 
   return (
     <section className="relative bg-gray-900 py-16 text-white">
-      {/* Background Visual */}
       <div className="absolute inset-0 opacity-30 z-0">
         <img src={quizImage} alt="Quiz Background" className="w-full h-full object-cover" />
       </div>
@@ -88,10 +92,7 @@ const QuizSection = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <FontAwesomeIcon
-                    icon={faQuestionCircle}
-                    className="mr-2"
-                  />
+                  <FontAwesomeIcon icon={faQuestionCircle} className="mr-2" />
                   {option}
                 </motion.button>
               ))}
@@ -109,13 +110,11 @@ const QuizSection = () => {
           </motion.div>
         )}
 
-        {/* Floating Superhero-Themed Icons */}
         <motion.div
           className="absolute top-10 left-10 z-0"
           animate={{ y: [0, -10, 0] }}
           transition={{ repeat: Infinity, duration: 4 }}
         >
-          {/* Add themed floating visuals, like a question mark or superhero icon */}
           <FontAwesomeIcon icon={faQuestionCircle} className="text-yellow-400 text-5xl" />
         </motion.div>
         <motion.div

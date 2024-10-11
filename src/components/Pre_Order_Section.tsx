@@ -1,6 +1,6 @@
 
 
-const PreOrderCTA = () => {
+const PreOrderCTA:React.FC= () => {
   return (
     <section className="py-16 bg-transparent text-white text-center">
       <h2 className="text-4xl font-bold">Don’t Miss Out on the Action!</h2>

@@ -1,13 +1,18 @@
-// FAQSection.js
-import  { useState } from 'react';
+// FAQSection.tsx
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
-import '../styles/FaqSection.css'
+import '../styles/FaqSection.css';
 
-const FAQSection = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+interface FAQ {
+  question: string;
+  answer: string;
+}
 
-  const faqs = [
+const FAQSection: React.FC = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const faqs: FAQ[] = [
     {
       question: "What is the book about?",
       answer: "The book is a thrilling adventure that takes you through the journey of a hero in a fantasy world filled with magic and superheroes."
@@ -30,7 +35,7 @@ const FAQSection = () => {
     }
   ];
 
-  const toggleFAQ = index => {
+  const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
@@ -43,12 +48,17 @@ const FAQSection = () => {
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div key={index} className="bg-gray-800 rounded-lg shadow-lg">
-              <div className="flex justify-between items-center p-4 cursor-pointer" onClick={() => toggleFAQ(index)}>
+              <div
+                className="flex justify-between items-center p-4 cursor-pointer"
+                onClick={() => toggleFAQ(index)}
+              >
                 <h3 className="text-xl">{faq.question}</h3>
                 <FontAwesomeIcon
                   icon={faQuestionCircle}
                   size="2x"
-                  className={`text-[#2a4dc1] transition-transform ${activeIndex === index ? 'rotate-180' : ''}`}
+                  className={`text-[#2a4dc1] transition-transform ${
+                    activeIndex === index ? 'rotate-180' : ''
+                  }`}
                 />
               </div>
               {activeIndex === index && (
@@ -65,4 +75,3 @@ const FAQSection = () => {
 };
 
 export default FAQSection;
-

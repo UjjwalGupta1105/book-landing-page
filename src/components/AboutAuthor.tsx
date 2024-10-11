@@ -3,9 +3,11 @@
 import authorImage from '../assets/author.jpg'; // Replace with your image path
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
+// Optional: Background image
+
 
 import {motion} from 'framer-motion'
-const AuthorSection = () => {
+const AuthorSection:React.FC = () => {
   return (
     <section className="relative  text-white py-16">
       <div className="absolute inset-0 top-0 left-0 opacity-20">

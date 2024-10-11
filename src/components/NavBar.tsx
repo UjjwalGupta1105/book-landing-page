@@ -1,12 +1,11 @@
-
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faHome, faUsers, faQuestionCircle, faBars } from '@fortawesome/free-solid-svg-icons';
-import '../styles/NavBar.css'
+import '../styles/NavBar.css';
 
-const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [scrolling, setScrolling] = useState(false);
+const NavBar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [scrolling, setScrolling] = useState<boolean>(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -14,7 +13,7 @@ const NavBar = () => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    setScrolling(offset > 50); 
+    setScrolling(offset > 50);
   };
 
   useEffect(() => {
@@ -43,18 +42,18 @@ const NavBar = () => {
           </div>
 
           {/* Nav Links - Desktop View */}
-          <div className=" md:flex space-x-8">
+          <div className="md:flex space-x-8">
             <a href="/" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
-               Home
+              Home
             </a>
             <a href="#about" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
-               About
+              About
             </a>
             <a href="#characters" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
               Characters
             </a>
             <a href="#faq" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
-               FAQ
+              FAQ
             </a>
           </div>
         </div>

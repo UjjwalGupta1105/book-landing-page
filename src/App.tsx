@@ -1,9 +1,6 @@
-
 import HeroSection from './components/HeroSection';
 import AboutBook from './components/AboutBook';
-import HeroVillainSection from './components/Hero_Villain';
 import PreOrderCTA from './components/Pre_Order_Section';
-
 import CharacterCards from './components/CharacterCards';
 import NavBar from './components/NavBar';
 import AuthorSection from './components/AboutAuthor';
@@ -13,22 +10,20 @@ import ReviewsSection from './components/ReviewSection';
 import FeedbackFormSection from './components/FeedbackFormSection';
 import QuizSection from './components/QuizSection';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className='bg-gradient-to-b from-gray-900 to-gray-800'>
-      <NavBar/>
+      <NavBar />
       <HeroSection />
       <AboutBook />
-      <CharacterCards/>
-      
-      <AuthorSection/>
-    <ReviewsSection/>
-    <FeedbackFormSection/>
-      <FAQSection/>
-      <QuizSection/>
+      <CharacterCards />
+      <AuthorSection />
+      <ReviewsSection />
+      <FeedbackFormSection />
+      <FAQSection />
+      <QuizSection />
       <PreOrderCTA />
-    
-      <FooterSection/>
+      <FooterSection />
     </div>
   );
 }

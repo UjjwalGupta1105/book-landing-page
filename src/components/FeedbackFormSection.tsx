@@ -1,19 +1,18 @@
-
-import { useState } from 'react';
+import { useState, FormEvent } from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-import '../styles/FaqSection.css'
-const FeedbackFormSection = () => {
-  const [rating, setRating] = useState(0);
-  const [hover, setHover] = useState(0);
-  const [feedback, setFeedback] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+import '../styles/FaqSection.css';
 
-  const handleSubmit = (e:any) => {
+const FeedbackFormSection: React.FC = () => {
+  const [rating, setRating] = useState<number>(0);
+  const [hover, setHover] = useState<number>(0);
+  const [feedback, setFeedback] = useState<string>('');
+  const [submitted, setSubmitted] = useState<boolean>(false);
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    // Handle form submission logic
     setSubmitted(true);
   };
 
@@ -47,7 +46,7 @@ const FeedbackFormSection = () => {
             {/* Star Rating */}
             <div className="flex justify-center items-center mb-6">
               <p className="mr-4 text-lg">Rate the Book:</p>
-              {[...Array(5)].map((star, index) => {
+              {[...Array(5)].map((_, index) => {
                 const ratingValue = index + 1;
                 return (
                   <motion.div
@@ -115,7 +114,6 @@ const FeedbackFormSection = () => {
         animate={{ y: [0, -10, 0] }}
         transition={{ repeat: Infinity, duration: 4 }}
       >
-        {/* Add a superhero-themed graphic or image */}
         <svg width="50" height="50" fill="currentColor" className="text-yellow-400">
           <circle cx="25" cy="25" r="20" />
         </svg>
@@ -125,7 +123,6 @@ const FeedbackFormSection = () => {
         animate={{ y: [0, -10, 0] }}
         transition={{ repeat: Infinity, duration: 4 }}
       >
-        {/* Another floating graphic or image */}
         <svg width="50" height="50" fill="currentColor" className="text-yellow-400">
           <rect width="40" height="40" x="5" y="5" />
         </svg>

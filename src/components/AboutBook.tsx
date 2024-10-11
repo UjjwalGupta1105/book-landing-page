@@ -1,14 +1,12 @@
-
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faShieldAlt, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import heroImage from '../assets/WhatsApp.jpg'; 
-import {motion} from 'framer-motion'
-const AboutBook = () => {
+import {motion} from 'framer-motion';
+
+const AboutBook: React.FC = () => {
   return (
-    <motion.div initial={{y:10 , scale:0.5}}  whileInView={{y:0,scale:1}} transition={{duration:1}} className=" text-white py-24 px-4 sm:px-6 lg:px-8">
+    <motion.div initial={{ y: 10, scale: 0.5 }} whileInView={{ y: 0, scale: 1 }} transition={{ duration: 1 }} className="text-white py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto space-y-12">
-        {/* Section Heading */}
         <div className="text-center">
           <h2 className="text-4xl font-bold text-indigo-500">
             About <span className="text-white">Money Mania: The Rise of Inflare</span>
@@ -18,9 +16,7 @@ const AboutBook = () => {
           </p>
         </div>
 
-        {/* About Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Section - Text and Icons */}
           <div className="space-y-8">
             <div className="flex items-center space-x-4">
               <FontAwesomeIcon icon={faBook} className="text-4xl text-green-400" />
@@ -63,14 +59,12 @@ const AboutBook = () => {
             </div>
           </div>
 
-          {/* Right Section - Image */}
           <div className="relative flex justify-center items-center">
             <img
               src={heroImage} 
               alt="Book Graphic"
               className="h-[600px] rounded-lg shadow-lg transform hover:scale-105 transition-all duration-500"
             />
-            {/* Floating Currency */}
             <div className="absolute top-0 left-0 w-16 h-16 bg-green-400 rounded-full opacity-75 animate-bounce"></div>
             <div className="absolute bottom-8 right-12 w-12 h-12 bg-yellow-400 rounded-full opacity-75 animate-bounce"></div>
             <div className="absolute top-12 right-0 w-10 h-10 bg-blue-400 rounded-full opacity-75 animate-bounce"></div>

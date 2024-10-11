@@ -1,16 +1,14 @@
-// ReviewsSection.js
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faQuoteLeft, faStarHalf } from '@fortawesome/free-solid-svg-icons';
 import reviewImage1 from '../assets/c3.jpg'; 
 import reviewImage2 from '../assets/c1.jpg';
 import reviewImage3 from '../assets/c2.jpg';
-import '../styles/ReviewSection.css'
-import {motion} from 'framer-motion'
+import '../styles/ReviewSection.css';
+import { motion } from 'framer-motion';
 
-const ReviewsSection = () => {
+const ReviewsSection: React.FC = () => {
   return (
-    <section  className="bg-gradient-to-b from-gray-900 to-gray-800 py-16 px-4 text-white relative overflow-hidden">
+    <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-16 px-4 text-white relative overflow-hidden">
       {/* Background Graphics */}
       <div className="absolute inset-0 opacity-20">
         {/* Custom SVG graphics or superhero-themed images for background */}
@@ -26,7 +24,12 @@ const ReviewsSection = () => {
         </h2>
 
         {/* Review Cards */}
-        <motion.div initial={{x:100 , scale:0.5}}  whileInView={{x:0,scale:1}} transition={{duration:1}} className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <motion.div 
+          initial={{ x: 100, scale: 0.5 }} 
+          whileInView={{ x: 0, scale: 1 }} 
+          transition={{ duration: 1 }} 
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
           {/* Review 1 */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
             <div className="flex items-center mb-4">
@@ -106,9 +109,6 @@ const ReviewsSection = () => {
           </div>
         </motion.div>
       </div>
-
-
-     
     </section>
   );
 };
