@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <div className="text-white w-full">
       <div className="relative h-[900px] flex w-full mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        {/* Background City and Currency */}
+       
         <div className="absolute inset-0 overflow-hidden opacity-50">
           <img className="w-full h-full object-cover" src={cityImage} alt="Eurocoin Fincity" />
           <div className="absolute inset-0 bg-black opacity-40"></div>

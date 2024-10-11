@@ -18,10 +18,7 @@ const FeedbackFormSection: React.FC = () => {
 
   return (
     <section className="relative bg-gray-900 py-16 text-white">
-      {/* Background Visual */}
-      {/* <div className="absolute inset-0 opacity-30 z-0">
-        <img src={feedbackImage} alt="Feedback Background" className="w-full h-full object-cover" />
-      </div> */}
+     
 
       <div className="relative max-w-7xl mx-auto px-4 z-10">
         {/* Title */}

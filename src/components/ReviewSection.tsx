@@ -11,7 +11,7 @@ const ReviewsSection: React.FC = () => {
     <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-16 px-4 text-white relative overflow-hidden">
       {/* Background Graphics */}
       <div className="absolute inset-0 opacity-20">
-        {/* Custom SVG graphics or superhero-themed images for background */}
+   
         <svg className="w-full h-full" viewBox="0 0 800 600">
           <circle cx="400" cy="300" r="500" fill="rgba(255, 255, 0, 0.1)" />
         </svg>
