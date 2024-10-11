@@ -1,9 +1,9 @@
 // AuthorSection.js
 
-import authorImage from '../assets/author.jpg'; // Replace with your image path
+import authorImage from '../assets/author.jpg'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
-// Optional: Background image
+
 
 
 import {motion} from 'framer-motion'
@@ -49,14 +49,7 @@ const AuthorSection:React.FC = () => {
                 <FontAwesomeIcon icon={faFacebook} size="2x" />
               </a>
             </div>
-            {/* Add superhero-themed graphics */}
-            {/* <div className="mt-6">
-              <img
-                src={superheroImage} // Replace with your superhero graphic path
-                alt="Superhero Theme"
-                className="h-24 w-auto mx-auto"
-              />
-            </div> */}
+           
           </motion.div>
         </div>
       </div>
