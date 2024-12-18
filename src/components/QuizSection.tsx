@@ -81,7 +81,7 @@ const QuizSection: React.FC = () => {
               {questions[currentQuestion].options.map((option, index) => (
                 <motion.button
                   key={index}
-                  className={`w-full py-3 px-5 rounded-md text-left font-medium transition-all ${
+                  className={`w-full py-3 px-5 rounded-3xl text-center font-medium transition-all ${
                     selectedAnswer === option
                       ? option === questions[currentQuestion].correctAnswer
                         ? 'bg-green-500 text-white'

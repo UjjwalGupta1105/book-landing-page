@@ -49,7 +49,7 @@ const NavBar: React.FC = () => {
             <a href="#about" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
               About
             </a>
-            <a href="#characters" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
+            <a href="#Characters" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
               Characters
             </a>
             <a href="#faq" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
