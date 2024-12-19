@@ -17,7 +17,7 @@ const FeedbackFormSection: React.FC = () => {
   };
 
   return (
-    <section className="relative bg-gray-900 py-16 text-white">
+    <section className="relative bg-white py-16 text-black">
      
 
       <div className="relative max-w-7xl mx-auto px-4 z-10">
@@ -35,7 +35,7 @@ const FeedbackFormSection: React.FC = () => {
         {!submitted ? (
           <motion.form
             onSubmit={handleSubmit}
-            className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-lg mx-auto"
+            className="bg-gray-800 text-white p-8 rounded-lg shadow-lg max-w-lg mx-auto"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -84,7 +84,7 @@ const FeedbackFormSection: React.FC = () => {
             {/* Submit Button */}
             <motion.button
               type="submit"
-              className="w-full bg-[#2a4dc1] py-3 rounded-md text-gray-900 font-bold hover:bg-[#1c44c5] transition-colors"
+              className="w-full bg-[#2a4dc1] py-3 rounded-md text-gray-900 font-bold hover:bg-[#1c44c5] transition-colors text-white"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

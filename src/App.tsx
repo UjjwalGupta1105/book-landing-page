@@ -12,7 +12,7 @@ import QuizSection from './components/QuizSection';
 
 const App: React.FC = () => {
   return (
-    <div className='bg-gradient-to-b from-gray-900 to-gray-800'>
+    <div className='bg-white'>
       <NavBar />
       <HeroSection />
       <AboutBook />

@@ -4,7 +4,7 @@ import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-sv
 
 const FooterSection: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10">
+    <footer className="bg-black text-white py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-6 bg-white text-black rounded-3xl py-7">
           <h2 className="text-3xl font-bold mb-2">Learn, laugh. and lead your way to wealth</h2>

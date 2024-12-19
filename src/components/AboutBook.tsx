@@ -6,10 +6,10 @@ import {motion} from 'framer-motion';
 const AboutBook: React.FC = () => {
   return (
     <motion.div initial={{ y: 10, scale: 0.5 }} whileInView={{ y: 0, scale: 1 }} transition={{ duration: 1 }} className="text-white py-24 px-4 sm:px-6 lg:px-8 mt-16 lg:mt-24" >
-      <div className="max-w-7xl mx-auto space-y-12">
+      <div className="max-w-7xl mx-auto space-y-12 text-black">
         <div className="text-center">
           <h2 className="text-4xl font-bold text-indigo-500">
-            About <span className="text-white">Money Mania: The Rise of Inflare</span>
+            About <span className="text-black">Money Mania: The Rise of Inflare</span>
           </h2>
           <p className="text-lg mt-4">
             Discover the world of <span className="font-bold">heroes</span> and <span className="font-bold">villains</span> as they navigate a society driven by wealth and power.
@@ -22,7 +22,7 @@ const AboutBook: React.FC = () => {
               <FontAwesomeIcon icon={faBook} className="text-4xl text-green-400" />
               <div>
                 <h3 className="text-xl font-bold">A Story of Power and Greed</h3>
-                <p className="text-gray-300">
+                <p className="text-black">
                   Explore a gripping tale where wealth is the ultimate power, and heroes must rise against unimaginable forces.
                 </p>
               </div>
@@ -32,7 +32,7 @@ const AboutBook: React.FC = () => {
               <FontAwesomeIcon icon={faUsers} className="text-4xl text-yellow-400" />
               <div>
                 <h3 className="text-xl font-bold">A Diverse Cast of Characters</h3>
-                <p className="text-gray-300">
+                <p className="text-black">
                   Meet a variety of heroes and villains, each with their own unique motivations, strengths, and weaknesses.
                 </p>
               </div>
@@ -42,7 +42,7 @@ const AboutBook: React.FC = () => {
               <FontAwesomeIcon icon={faShieldAlt} className="text-4xl text-blue-400" />
               <div>
                 <h3 className="text-xl font-bold">Battles That Will Define the Future</h3>
-                <p className="text-gray-300">
+                <p className="text-black">
                   Witness epic confrontations between super-powered individuals that will shape the fate of Eurocoin Fincity.
                 </p>
               </div>
@@ -52,7 +52,7 @@ const AboutBook: React.FC = () => {
               <FontAwesomeIcon icon={faGlobe} className="text-4xl text-red-400" />
               <div>
                 <h3 className="text-xl font-bold">A World Like No Other</h3>
-                <p className="text-gray-300">
+                <p className="text-black">
                   Set in a futuristic, dystopian world where the economy and superpowers collide in unexpected ways.
                 </p>
               </div>

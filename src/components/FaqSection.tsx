@@ -40,14 +40,14 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <section className="bg-gray-900 text-white py-16">
+    <section className="bg-white text-black py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-10">
           Frequently Asked <span className="text-[#2a4dc1]">Questions</span>
         </h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-gray-800 rounded-lg shadow-lg">
+            <div key={index} className="bg-gray-800 text-white rounded-lg shadow-lg">
               <div
                 className="flex justify-between items-center p-4 cursor-pointer"
                 onClick={() => toggleFAQ(index)}

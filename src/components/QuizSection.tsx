@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import quizImage from '../assets/city.jpg';
+// import quizImage from '../assets/city.jpg';
 
 interface Question {
   question: string;
@@ -51,14 +51,14 @@ const QuizSection: React.FC = () => {
   };
 
   return (
-    <section className="relative bg-gray-900 py-16 text-white">
-      <div className="absolute inset-0 opacity-30 z-0">
+    <section className="relative bg-white py-16 text-white">
+      {/* <div className="absolute inset-0 opacity-30 z-0">
         <img src={quizImage} alt="Quiz Background" className="w-full h-full object-cover" />
-      </div>
+      </div> */}
 
       <div className="relative max-w-5xl mx-auto px-4 z-10">
         <motion.h2
-          className="text-4xl sm:text-5xl font-bold text-center mb-10"
+          className="text-4xl sm:text-5xl font-bold text-center mb-10 text-black"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -68,12 +68,12 @@ const QuizSection: React.FC = () => {
 
         {!showResult ? (
           <motion.div
-            className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-xl mx-auto"
+            className="bg-yellow-400 p-8 rounded-2xl shadow-lg max-w-xl mx-auto"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-2xl font-semibold mb-6 text-center">
+            <h3 className="text-2xl font-bold mb-6 text-center text-black">
               {questions[currentQuestion].question}
             </h3>
 
@@ -86,7 +86,7 @@ const QuizSection: React.FC = () => {
                       ? option === questions[currentQuestion].correctAnswer
                         ? 'bg-green-500 text-white'
                         : 'bg-red-500 text-white'
-                      : 'bg-gray-700 hover:bg-gray-600 text-gray-300'
+                      : 'bg-white hover:bg-white-600 text-black font-bold'
                   }`}
                   onClick={() => handleAnswerClick(option)}
                   whileHover={{ scale: 1.05 }}

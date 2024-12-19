@@ -53,7 +53,7 @@ const CharacterCards: React.FC = () => {
       transition={{ duration: 1 }}
       className="px-8"
     >
-      <h2 className="text-4xl font-bold text-white text-center mb-12">Meet the Heroes</h2>
+      <h2 className="text-4xl font-bold text-black text-center mb-12">Meet the Heroes</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {characters.map((character, index) => (
           <div

@@ -9,7 +9,7 @@ import { faTwitter, faInstagram, faFacebook } from '@fortawesome/free-brands-svg
 import {motion} from 'framer-motion'
 const AuthorSection:React.FC = () => {
   return (
-    <section className="relative  text-white py-16">
+    <section className="relative py-16 text-black">
       <div className="absolute inset-0 top-0 left-0 opacity-20">
         {/* <img src={heroBackground} alt="Background" className="object-cover w-full h-full" /> */}
       </div>
@@ -26,7 +26,7 @@ const AuthorSection:React.FC = () => {
 
           {/* Author Information */}
           <motion.div initial={{x:100 , scale:0.5}}  whileInView={{x:0,scale:1}} transition={{duration:1}} className="md:w-1/2 md:pl-10">
-            <h2 className="text-4xl font-bold mb-4">
+            <h2 className="text-4xl  font-bold mb-4">
               Meet the <span className="text-[#2a4dc1]">Author</span>
             </h2>
             <p className="text-lg mb-4">

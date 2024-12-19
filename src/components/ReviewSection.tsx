@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 const ReviewsSection: React.FC = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-16 px-4 text-white relative overflow-hidden">
+    <section className="bg-white py-16 px-4 text-black relative overflow-hidden">
       {/* Background Graphics */}
       <div className="absolute inset-0 opacity-20">
    
@@ -31,7 +31,7 @@ const ReviewsSection: React.FC = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           {/* Review 1 */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 text-white">
             <div className="flex items-center mb-4">
               <img
                 src={reviewImage1}
@@ -57,7 +57,7 @@ const ReviewsSection: React.FC = () => {
           </div>
 
           {/* Review 2 */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 text-white">
             <div className="flex items-center mb-4">
               <img
                 src={reviewImage2}
@@ -83,7 +83,7 @@ const ReviewsSection: React.FC = () => {
           </div>
 
           {/* Review 3 */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 text-white">
             <div className="flex items-center mb-4">
               <img
                 src={reviewImage3}

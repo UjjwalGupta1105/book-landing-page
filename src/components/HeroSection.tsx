@@ -1,13 +1,12 @@
 import bookCover from '../assets/WhatsApp.jpg';
-import cityImage from '../assets/city.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
 import '../styles/HeroSection.css';
-import bgVideo from "../assets/HeroSectionVideo.MP4"
+import bgVideo from "../assets/video/HeroSectionVideo.mp4"
 
 const HeroSection = () => {
   return (
-    <div className="text-white  w-full mb-16 lg:mb-24">     
+    <div className="text-white  w-full mb-16 lg:mb-24 bg-gradient-to-b from-gray-900 to-gray-800">     
       <div className="relative h-[600px] sm:h-[800px] lg:h-[900px] flex flex-col lg:flex-row w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
         {/* Background Image */}
         <div className="absolute inset-0 overflow-hidden opacity-50">
@@ -40,7 +39,7 @@ const HeroSection = () => {
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mb-24">
             <button className="bg-[#2a4dc1] py-2 px-4 rounded-md shadow-lg text-white transition duration-300 animate-bounce">
               <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
               Pre Order Now
