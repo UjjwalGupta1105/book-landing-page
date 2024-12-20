@@ -2,7 +2,7 @@ import bookCover from '../assets/WhatsApp.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
 import '../styles/HeroSection.css';
-import bgVideo from "../assets/video/HeroSectionVideo.mp4"
+import bgVideo from "../assets/HeroSectionVideo.mp4"
 
 const HeroSection = () => {
   return (
