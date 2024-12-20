@@ -6,5 +6,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // Updated_Branch
-  assetsInclude: ['**/*.MP4'],
+  assetsInclude: ['**/*.mp4'],
 })
