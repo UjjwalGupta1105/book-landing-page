@@ -35,7 +35,7 @@ const DownloadBook = () => {
           </div>
             
             {/* Form Section */}
-        <div className="form absolute left-40 top-30 m-40 pb-20 z-100">
+        <div className="form absolute left-40 top-30 m-40 pb-20 z-100 mb-30">
           <div className="p-6 max-w-md w-full">
             <h2 className="text-4xl mb-4 text-black text-center">Read free sample now!</h2>
             <form className="flex flex-col gap-4 text-black">
