@@ -6,7 +6,7 @@ import bgVideo from "../assets/HeroSectionVideo.mp4"
 
 const HeroSection = () => {
   return (
-    <div className="text-white  w-full mb-16 lg:mb-24 bg-gradient-to-b from-gray-900 to-gray-800">     
+    <div className="text-white  w-full mb-16 lg:mb-0 bg-gradient-to-b from-gray-900 to-gray-800">     
       <div className="relative h-[600px] sm:h-[800px] lg:h-[900px] flex flex-col lg:flex-row w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
         {/* Background Image */}
         <div className="absolute inset-0 overflow-hidden opacity-50">

@@ -4,27 +4,27 @@ import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-sv
 
 const FooterSection: React.FC = () => {
   return (
-    <footer className="bg-black text-white py-10">
+    <footer className="bg-black text-white py-10" id="faq">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-6 bg-white text-black rounded-3xl py-7">
           <h2 className="text-3xl font-bold mb-2">Learn, laugh. and lead your way to wealth</h2>
           <p className="text-lg mb-4">grab the comic now!</p>
           <div className="flex justify-center">
-            <button className="bg-red-500 text-white p-2 rounded-r-md hover:bg-[#173bb1] transition duration-300">
+            <button className="bg-red-500 text-white w-40 p-2 rounded-xl  hover:bg-red-600 transition duration-300">
               Read Now
             </button>
           </div>
         </div>
         <div className="text-center mb-6 bg-white text-black rounded-3xl py-7">
-          <h2 className="text-3xl font-bold mb-2">Join Our Superhero Community!</h2>
-          <p className="text-lg mb-4">Subscribe to our newsletter for the latest updates, exclusive content, and more!</p>
+          <h2 className="text-3xl font-bold mb-2">Be the part of financial revolution</h2>
+          <p className="text-lg mb-4">Subscribe to get latest updates,exclusive content, and more !</p>
           <div className="flex justify-center">
             <input
               type="email"
               placeholder="E-mail"
-              className="p-2 rounded-l-md text-gray-900 border-black"
+              className="p-2 w-80 rounded-md text-gray-900 border-black"
             />
-            <button className="bg-red-500 text-white p-2 rounded-r-md hover:bg-[#173bb1] transition duration-300">
+            <button className="bg-red-500 text-white w-40 p-2 rounded-xl hover:bg-red-600 transition duration-300">
               Subscribe
             </button>
           </div>

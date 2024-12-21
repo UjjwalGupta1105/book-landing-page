@@ -58,17 +58,17 @@ const QuizSection: React.FC = () => {
 
       <div className="relative max-w-5xl mx-auto px-4 z-10">
         <motion.h2
-          className="text-4xl sm:text-5xl font-bold text-center mb-10 text-black"
+          className="text-4xl sm:text-3.5xl font-bold text-center mb-10 text-black"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Test Your Knowledge!
+         Your Wallet Wants you to Take This quiz
         </motion.h2>
 
         {!showResult ? (
           <motion.div
-            className="bg-yellow-400 p-8 rounded-2xl shadow-lg max-w-xl mx-auto"
+            className="bg-yellow-400 p-8 rounded-2xl shadow-lg max-w-xl mx-auto border-2 border-black"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faHome, faUsers, faQuestionCircle, faBars } from '@fortawesome/free-solid-svg-icons';
 import '../styles/NavBar.css';
+import logo from  "../assets/logoSite.png"
 
 const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -29,9 +30,10 @@ const NavBar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="text-white text-2xl font-bold hover:text-indigo-400">
+            {/* <a href="/" className="text-white text-2xl font-bold hover:text-indigo-400">
               MoneyMafia
-            </a>
+            </a> */}
+            <a href="/" className="text-white text-2xl font-bold hover:text-indigo-400 mt-3"><img src={logo} alt="OUTCHASE" /></a>
           </div>
 
           {/* Menu Icon (Mobile) */}
@@ -49,7 +51,7 @@ const NavBar: React.FC = () => {
             <a href="#about" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
               About
             </a>
-            <a href="#Characters" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
+            <a href="#characters" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
               Characters
             </a>
             <a href="#faq" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">

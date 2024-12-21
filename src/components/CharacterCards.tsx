@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShieldAlt, faSkullCrossbones, faFire, faBolt } from '@fortawesome/free-solid-svg-icons';
-import c2 from '../assets/c2.jpg';
-import c3 from '../assets/c3.jpg';
-import c4 from '../assets/c4.jpg';
-import c5 from '../assets/c5.jpg';
+import c2 from '../assets/cast2.png';
+import c3 from '../assets/cast3.jpg';
+import c4 from '../assets/cast1.png';
+import c5 from '../assets/cast4.jpg';
 import { motion } from 'framer-motion';
 
 interface Character {
@@ -17,29 +17,29 @@ interface Character {
 const CharacterCards: React.FC = () => {
   const characters: Character[] = [
     {
-      name: 'Inflare',
-      role: 'Hero',
+      name: 'Momenta',
+      role: 'Money',
       icon: faFire,
       description: 'A fiery superhero with the ability to control and manipulate flames at will.',
       imageUrl: c4,
     },
     {
-      name: 'Crypton',
-      role: 'Villain',
+      name: 'Inflare',
+      role: 'Inflation',
       icon: faSkullCrossbones,
       description: 'A cunning villain who deals in the black market of crypto weapons and dark tech.',
       imageUrl: c2,
     },
     {
-      name: 'PowerFlux',
-      role: 'Hero',
+      name: 'Weal',
+      role: 'Wealth',
       icon: faBolt,
       description: 'A hero with the ability to absorb and redirect energy into powerful blasts.',
       imageUrl: c3,
     },
     {
-      name: 'Dark Shield',
-      role: 'Villain',
+      name: 'Rescus',
+      role: 'Recession',
       icon: faShieldAlt,
       description: 'A tactical mastermind with an impenetrable shield and dangerous battle skills.',
       imageUrl: c5,
@@ -53,8 +53,8 @@ const CharacterCards: React.FC = () => {
       transition={{ duration: 1 }}
       className="px-8"
     >
-      <h2 className="text-4xl font-bold text-black text-center mb-12">Meet the Heroes</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <h2 className="text-4xl font-bold text-black text-center mb-12" id="characters">Meet the Cast</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 h-400">
         {characters.map((character, index) => (
           <div
             key={index}
@@ -63,9 +63,9 @@ const CharacterCards: React.FC = () => {
             <img
               src={character.imageUrl}
               alt={character.name}
-              className="absolute top-0 left-0 inset-0 w-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+              className="absolute top-0 left-0 inset-0 h-full w-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"
             />
-            <div className="relative z-10 p-6 h-[500px] flex flex-col justify-end items-center text-center bg-gradient-to-t from-black to-transparent">
+            <div className="relative z-10 p-6 h-[650px] flex flex-col justify-end items-center text-center bg-gradient-to-t from-black to-transparent">
               <div className="mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <FontAwesomeIcon icon={character.icon} size="3x" className="text-indigo-500" />
               </div>
