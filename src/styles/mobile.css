@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1200px) {
+    .bookImg{
+        right: 5%;
+        bottom: 2;
+    }
+    .form{
+        left: -12%;
+    }
+      }
+@media only screen and (max-width: 770px) {
+    /* #root{
+        width: min-content;
+    } */
+    .DesktopNav{
+        display:none;
+    }
+    .Dwn-Section{
+        /* height: 600px; */
+        margin-bottom: 280px;
+    }
+    .bookImg{
+        right: 20%;
+        bottom: 2;
+    }
+    .form{
+        position: relative;
+        left:10px;
+        top: 370px;
+        font-size:larger;
+    }
+    .cards{
+        height: 750px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        #root{
+            width: min-content;
+        }
+
+    
+      }
+  }

@@ -2,7 +2,7 @@ import BookImg from "../assets/WhatsApp.jpg"
 
 const DownloadBook = () => {
     return (
-        <div className="relative  bg-white text-white min-h-screen h-200" id="about">
+        <div className="Dwn-Section relative  bg-white text-white min-h-screen h-200" id="about">
           {/* Curved Background */}
           <div className="relative">
             <div className="bg-black">
@@ -26,32 +26,32 @@ const DownloadBook = () => {
             </div>
 
             {/* Book Image */}
-            <div className="flex justify-center absolute right-60 top-140">
+            <div className="bookImg flex justify-center absolute right-60 top-140">
             <img
               src={BookImg}
               alt="Money Mania"
-              className="rounded shadow-lg h-70 w-80"
+              className="rounded shadow-lg h-90 w-80"
             />
           </div>
             
             {/* Form Section */}
-        <div className="absolute left-30 top-30 m-40 pb-20 z-100">
+        <div className="form absolute left-40 top-30 m-40 pb-20 z-100">
           <div className="p-6 max-w-md w-full">
-            <h2 className="text-3xl mb-4 text-black text-center">Read free sample now!</h2>
+            <h2 className="text-4xl mb-4 text-black text-center">Read free sample now!</h2>
             <form className="flex flex-col gap-4 text-black">
               <input
                 type="email"
                 placeholder="E-mail"
-                className="border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
               />
               <input
                 type="number"
                 placeholder="Phone"
-                className="border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
               />
               <button
                 type="submit"
-                className="w-40 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg m-auto"
+                className="w-40 bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-5 rounded-lg m-auto"
               >
                 DOWNLOAD
               </button>

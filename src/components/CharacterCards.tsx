@@ -63,9 +63,9 @@ const CharacterCards: React.FC = () => {
             <img
               src={character.imageUrl}
               alt={character.name}
-              className="absolute top-0 left-0 inset-0 h-full w-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+              className="absolute top-0 left-0 inset-0 h-full w-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300 content-center object-cover object-fill"
             />
-            <div className="relative z-10 p-6 h-[650px] flex flex-col justify-end items-center text-center bg-gradient-to-t from-black to-transparent">
+            <div className="cards relative z-10 p-6 h-[625px] flex flex-col justify-end items-center text-center bg-gradient-to-t from-black to-transparent">
               <div className="mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <FontAwesomeIcon icon={character.icon} size="3x" className="text-indigo-500" />
               </div>

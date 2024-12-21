@@ -44,7 +44,7 @@ const NavBar: React.FC = () => {
           </div>
 
           {/* Nav Links - Desktop View */}
-          <div className="md:flex space-x-8">
+          <div className="md:flex space-x-8 DesktopNav">
             <a href="/" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
               Home
             </a>
