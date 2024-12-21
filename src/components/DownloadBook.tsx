@@ -2,7 +2,7 @@ import BookImg from "../assets/WhatsApp.jpg"
 
 const DownloadBook = () => {
     return (
-        <div className="Dwn-Section relative  bg-white text-white min-h-screen h-200" id="about">
+        <div className="Dwn-Section relative  bg-white text-white min-h-screen h-200 mb-30" id="about">
           {/* Curved Background */}
           <div className="relative">
             <div className="bg-black">
