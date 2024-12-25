@@ -68,7 +68,7 @@ const QuizSection: React.FC = () => {
 
         {!showResult ? (
           <motion.div
-            className="bg-yellow-400 p-8 rounded-2xl shadow-lg max-w-xl mx-auto border-2 border-black"
+            className="bg-[#F1A700] p-8 rounded-2xl shadow-lg max-w-xl mx-auto border-2 border-black"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}

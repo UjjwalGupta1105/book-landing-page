@@ -48,8 +48,8 @@ const CharacterCards: React.FC = () => {
 
   return (
     <motion.div
-      initial={{ y: 10, scale: 0.5 }}
-      whileInView={{ y: 0, scale: 1 }}
+      // initial={{ y: 10, scale: 0.5 }}
+      // whileInView={{ y: 0, scale: 1 }}
       transition={{ duration: 1 }}
       className="px-8"
     >
@@ -58,14 +58,14 @@ const CharacterCards: React.FC = () => {
         {characters.map((character, index) => (
           <div
             key={index}
-            className="relative group bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+            className=" mx-2 relative group bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
           >
             <img
               src={character.imageUrl}
               alt={character.name}
               className="absolute top-0 left-0 inset-0 h-full w-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300 content-center object-cover object-fill"
             />
-            <div className="cards relative z-10 p-6 h-[625px] flex flex-col justify-end items-center text-center bg-gradient-to-t from-black to-transparent">
+            <div className="cards relative z-10 p-6 h-[575px] flex flex-col justify-end items-center text-center bg-gradient-to-t from-black to-transparent">
               <div className="mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <FontAwesomeIcon icon={character.icon} size="3x" className="text-indigo-500" />
               </div>

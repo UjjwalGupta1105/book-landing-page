@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook, faHome, faUsers, faQuestionCircle, faBars } from '@fortawesome/free-solid-svg-icons';
+import {faUsers, faQuestionCircle, faBars } from '@fortawesome/free-solid-svg-icons';
+// import { faBook, faHome} from '@fortawesome/free-solid-svg-icons';
+
 import '../styles/NavBar.css';
 import logo from  "../assets/logoSite.png"
 
@@ -45,17 +47,17 @@ const NavBar: React.FC = () => {
 
           {/* Nav Links - Desktop View */}
           <div className="md:flex space-x-8 DesktopNav">
-            <a href="/" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
+            {/* <a href="/" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
               Home
-            </a>
+            </a> */}
             <a href="#about" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
-              About
+              About Us
             </a>
-            <a href="#characters" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
+            {/* <a href="#characters" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
               Characters
-            </a>
+            </a> */}
             <a href="#faq" className="text-gray-300 hover:text-indigo-400 px-3 py-2 text-lg font-medium">
-              FAQ
+              Contact Us
             </a>
           </div>
         </div>
@@ -64,17 +66,17 @@ const NavBar: React.FC = () => {
       {/* Mobile Menu - Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-gray-800">
-          <a href="/" className="block text-gray-300 hover:text-indigo-400 px-4 py-2 text-lg font-medium">
+          {/* <a href="/" className="block text-gray-300 hover:text-indigo-400 px-4 py-2 text-lg font-medium">
             <FontAwesomeIcon icon={faHome} /> Home
-          </a>
+          </a> */}
           <a href="#about" className="block text-gray-300 hover:text-indigo-400 px-4 py-2 text-lg font-medium">
-            <FontAwesomeIcon icon={faUsers} /> About
+            <FontAwesomeIcon icon={faUsers} /> About Us
           </a>
-          <a href="#characters" className="block text-gray-300 hover:text-indigo-400 px-4 py-2 text-lg font-medium">
+          {/* <a href="#characters" className="block text-gray-300 hover:text-indigo-400 px-4 py-2 text-lg font-medium">
             <FontAwesomeIcon icon={faBook} /> Characters
-          </a>
+          </a> */}
           <a href="#faq" className="block text-gray-300 hover:text-indigo-400 px-4 py-2 text-lg font-medium">
-            <FontAwesomeIcon icon={faQuestionCircle} /> FAQ
+            <FontAwesomeIcon icon={faQuestionCircle} /> Contact Us
           </a>
         </div>
       )}

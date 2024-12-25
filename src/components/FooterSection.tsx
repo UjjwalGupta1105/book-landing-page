@@ -22,9 +22,9 @@ const FooterSection: React.FC = () => {
             <input
               type="email"
               placeholder="E-mail"
-              className="p-2 w-80 rounded-md text-gray-900 border-black"
+              className="p-2 w-80 rounded-md text-gray-900 border-2 border-black"
             />
-            <button className="bg-red-500 text-white w-40 p-2 rounded-xl hover:bg-red-600 transition duration-300">
+            <button className="bg-red-500 text-white w-40 p-2 ml-0.5 rounded-xl hover:bg-red-600 transition duration-300">
               Subscribe
             </button>
           </div>

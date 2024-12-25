@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1350px) {
     .bookImg{
         right: 5%;
         bottom: 2;
@@ -7,16 +7,16 @@
         left: -12%;
     }
       }
-@media only screen and (max-width: 770px) {
-    /* #root{
-        width: min-content;
-    } */
+@media only screen and (max-width: 850px) {
+    body{
+       zoom:initial;
+    }
     .DesktopNav{
         display:none;
     }
     .Dwn-Section{
         height: 600px;
-        margin-bottom: 270px;
+        margin-bottom: 320px;
     }
     .bookImg{
         right: 20%;
@@ -32,7 +32,7 @@
         height: 750px;
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 600px) {
         #root{
             width: min-content;
         }
