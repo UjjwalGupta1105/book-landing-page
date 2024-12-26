@@ -1,3 +1,7 @@
+body{
+    width: 100vw;
+    box-sizing: border-box;
+}
 @media only screen and (max-width: 1350px) {
     .bookImg{
         right: 5%;
@@ -8,28 +12,47 @@
     }
       }
 @media only screen and (max-width: 850px) {
-    body{
-       zoom:initial;
+    html,body{
+        overflow-x: hidden;
+        width: min-content;
     }
     .DesktopNav{
         display:none;
     }
     .Dwn-Section{
-        height: 600px;
-        margin-bottom: 320px;
+        width:min-content;
+        /* height: 600px; */
+        margin-bottom: 370px;
     }
     .bookImg{
         right: 20%;
         bottom: 2;
+        margin: auto;
+        display: block;
+    }
+    .bookImg img{
+        margin-left: 50px;
     }
     .form{
+        width:100vw;
         position: relative;
         left:10px;
         top: 370px;
         font-size:larger;
+        margin:auto;
+        margin-top: 120px;
+        margin-bottom: 120px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .characters{
+        /* width:min-content; */
+        justify-content: center;
+        margin-top: 30px;
     }
     .cards{
-        height: 750px;
+        height: 600px;
     }
 
     @media only screen and (max-width: 600px) {
